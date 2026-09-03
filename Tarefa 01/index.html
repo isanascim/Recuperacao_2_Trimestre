@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <section id="controle" class="card">
+
+    <main class="container">
+        <header>
+            <h1>Controle do Equipamento</h1>
+            <p>Desenvolva a interface solicitada na avaliação.</p>
+        </header>
+
+        <section id="controle" class="card">
             <!-- TAREFA 01:
                  Crie aqui o status, os botões e o seletor de cor.
             -->
-    <h1>Mini Paint</h1>
-    <input type="color" id="cor"> 
-    <button id="limpar">Limpar</button>
-    <button id="exportar">Resetar</button>
-    <button id="desligar" onclick="myFunction()">Desligar</button>
-    
-    <br>
-    <br>
-    <canvas id="tela" width="600" height="400"></canvas>
-    </section>
-    </div>
+            <input type="color" id="cor"> 
+            <button id="resetar">Resetar</button>
+            <button id="desligado" onclick="myFunction()">Desligado</button>
+            <br>
+            <br>
+            <canvas id="tela" width="600" height="400"></canvas>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

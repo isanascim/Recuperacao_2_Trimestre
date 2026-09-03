@@ -7,67 +7,60 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
     padding: 30px 15px;
-  }
-  
-  .container {
+    text-align: center;
+    background-color: #ddafd3;
+    color: rgb(95, 40, 79);
+}
+
+.container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     margin-bottom: 10px;
-  }
-  
-  .card {
+}
+
+.card {
     width: 100%;
     min-height: 180px;
     padding: 24px;
     margin-bottom: 24px;
-    border: 1px solid #ddafd3;
+    border: 1px solid #ccc;
     border-radius: 10px;
-  }
-  
-  /* Desenvolva o restante do CSS. */
-  
-  body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  canvas {
-    border: 2px solid black;
-    cursor: crosshair;
-  }
-  
-  body {
-      padding: 25px;
-      background-color:#ddafd3;
-      color: rgb(95, 40, 79);
-      font-size: 25px;
-    }
+}
+
+/* Desenvolva o restante do CSS. */
+
+/* Lembre-se de criar uma media query para telas
+   de até 768px quando a tarefa exigir responsividade. */
+
+.light-mode {
+    background-color:  rgb(95, 40, 79);
+    color: #ddafd3;
+}
+
+section h1 {
+    margin-bottom: 10px;
     
-    .dark-mode {
-      background-color: rgb(95, 40, 79);
-      color: #ddafd3;
-    }
-  
-  @media (max-width: 768px){
+}
+
+@media (max-width: 768px){
 
     canvas {
         height: 270px;
         width: 250px;
     }
-  }
-  /* Lembre-se de criar uma media query para telas
-     de até 768px quando a tarefa exigir responsividade. */
+}

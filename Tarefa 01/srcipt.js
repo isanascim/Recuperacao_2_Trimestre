@@ -12,8 +12,9 @@
 
 const tela = document.getElementById("tela");
 const ctx = tela.getContext("2d");
-ctx.fillStyle = "white"; // Declara o fundo com a cor branca
-ctx.fillRect(0, 0, tela.width, tela.height); // Limpar
+const desligar = document.getElementById("desligado");
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, tela.width, tela.height);
 
 let desenhando = false;
 
@@ -21,6 +22,7 @@ tela.onmousedown = () => {
   desenhando = true;
   ctx.beginPath();
 };
+
 tela.onmouseup = () => (desenhando = false);
 
 tela.onmousemove = (e) => {
@@ -35,29 +37,18 @@ tela.onmouseleave = () => {
   ctx.beginPath();
 };
 
-limpar.onclick = () => {
+resetar.onclick = () => {
   ctx.clearRect(0, 0, tela.width, tela.height);
-  ctx.fillStyle = "White";
+  ctx.fillStyle = "white";
   ctx.fillRect(0, 0, tela.width, tela.height);
 };
 
-
-exportar.onclick = () => {
-  const link = document.createElement("a"); // Cria a tag <a>
-  link.download = "MiniPaint.png";
-  link.href = tela.toDataURL();
-  link.click();
-};
-
-  function myFunction() {
-  var desligar = document.getElementById("desligar");
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  if (desligar.innerHTML === "Desligar") {
-    desligar.innerHTML = "Ligar";
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+  if (desligar.innerHTML === "Desligado") {
+    desligar.innerHTML = "Ligado";
   } else {
-    desligar.innerHTML = "Desligar";
+    desligar.innerHTML = "Desligado";
   }
-};
-
-
+}
