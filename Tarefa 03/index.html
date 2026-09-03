@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Accordion</title>
-  </head>
-  <body>
-    <input type="radio" name="menu" id="sec1" />
-    <label for="sec1">Seção 1</label>
-    <div class="conteudo">CSonteúdo da Seção 1</div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 03 - F1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Equipes Formúla 1</h1>
+            <p>Desenvolva o menu solicitado na avaliação.</p>
+        </header>
+
+        <section id="configuracoes" class="card">
+            <!-- TAREFA 03:
+                 Crie aqui o menu acordeão com pelo menos 4 seções.
+            -->
+            <input type="radio" name="menu" id="sec1" />
+    <label for="sec1">Ferrari</label>
+    <div class="conteudo">Pilotos: Charles LecLerc e Lewis Hamilton</div>
 
     <input type="radio" name="menu" id="sec2" />
-    <label for="sec2">Seção 2</label>
-    <div class="conteudo">Conteúdo da Seção 2</div>
+    <label for="sec2">Mercedes</label>
+    <div class="conteudo">Pilotos: Kimi Antonelli e George Russel</div>
 
     <input type="radio" name="menu" id="sec3" />
-    <label for="sec3">Seção 3</label>
-    <div class="conteudo">Conteúdo da Seção 3</div>
+    <label for="sec3">Willians</label>
+    <div class="conteudo">Pilotos: Carlos Sainz e Alexander Albon</div>
 
     <input type="radio" name="menu" id="sec4" />
-    <label for="sec4">Seção 4</label>
-    <div class="conteudo">Conteúdo da Seção 4</div>
+    <label for="sec4">McLaren</label>
+    <div class="conteudo">Pilotos: Lando Norris e Oscar Piastri</div>
+        </section>
+    </main>
 
-
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
