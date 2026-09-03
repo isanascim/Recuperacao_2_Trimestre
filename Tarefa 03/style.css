@@ -1,0 +1,31 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  margin: auto;
+}
+input {
+  display: none;
+}
+
+label {
+  display: block; /* Posição fixa */
+  background: #643e88; /* Cor do elemento */
+  color: white; /* Cor do texto */
+  padding: 15px; /* Espçamento interno */
+  cursor: pointer; /* Estilo mouse */
+}
+
+.conteudo {
+  max-height: 0; /* aLTURA MÁXIMA */
+  overflow: hidden; /* Não quebrar conforme tamanhoda tela */
+  background: #eee; /* Cor do elemento */
+  transition: 0.3s; /* Transição ao abrir menu */
+  padding: 0 10px; /* Espaçamento interno */
+}
+
+
+input:checked + label + .conteudo {
+  max-height: 200px;
+  padding: 20px;
+}
